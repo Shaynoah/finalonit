@@ -1,4 +1,6 @@
 [build]
-  base = "Downloads/onit-master/"
+  # Netlify should run the build from the project root. Leave `base` empty
+  # (or remove it) so Netlify uses the repository root. Keep the standard
+  # Vite build command and the default `dist` publish folder.
   command = "npm run build"
   publish = "dist"
